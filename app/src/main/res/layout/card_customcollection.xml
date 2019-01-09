@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:layout_constraintTop_toBottomOf="@id/header_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/customitem_subtitle"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="160dp"

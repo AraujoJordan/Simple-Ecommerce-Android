@@ -22,14 +22,14 @@
             android:layout_height="wrap_content"
             android:text="SHOPICRUIT"
             android:textSize="28sp"
-            android:id="@+id/header_title"
+            android:id="@+id/customitem_title"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="@id/header_background"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-            android:id="@+id/header_subtitle"
+            android:id="@+id/customitem_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="The best store in your phone"
@@ -37,10 +37,14 @@
             android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/header_title"/>
+            app:layout_constraintTop_toBottomOf="@id/customitem_title"/>
 
     <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_width="0dp"
+            android:id="@+id/main_recycleview"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
