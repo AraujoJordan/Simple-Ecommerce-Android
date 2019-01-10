@@ -1,6 +1,6 @@
 package com.araujo.jordan.shopifymobilesummerchallenge2019.contract
 
-import com.araujo.jordan.shopifymobilesummerchallenge2019.model.Collection
+import com.araujo.jordan.shopifymobilesummerchallenge2019.model.Product
 
 
 /**
@@ -8,15 +8,15 @@ import com.araujo.jordan.shopifymobilesummerchallenge2019.model.Collection
  * Created by araujojordan on 18/12/2018.
  */
 
-class CollectionListContract {
+class ProductListContract {
 
     interface View : BaseView {
         fun showLoading(isLoading: Boolean)
         fun showErrorMessage(error: String)
-        fun fetchColSuccess(collects: List<Collection>?)
+        fun fetchProductsSuccess(list: List<Product>?)
     }
 
     interface Presenter : BasePresenter<View> {
-        fun fetchColData(page: Int, colID: String)
+        fun fetchProdData(page: Int, products: String)
     }
 }

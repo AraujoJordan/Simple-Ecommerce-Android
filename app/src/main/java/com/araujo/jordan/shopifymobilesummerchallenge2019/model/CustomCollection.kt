@@ -13,7 +13,7 @@ import kotlinx.android.parcel.Parcelize
  */
 @Parcelize
 data class CustomCollection (
-    @SerializedName("id") val id: Int,
+    @SerializedName("id") val id: String,
     @SerializedName("handle") val handle: String,
     @SerializedName("title") val title: String,
     @SerializedName("updated_at") val updated_at: String,

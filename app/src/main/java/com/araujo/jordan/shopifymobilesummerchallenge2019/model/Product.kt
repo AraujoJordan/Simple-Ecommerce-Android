@@ -13,7 +13,7 @@ import kotlinx.android.parcel.Parcelize
  */
 @Parcelize
 data class Product (
-    @SerializedName("id") val id: Int,
+    @SerializedName("id") val id: String,
     @SerializedName("title") val title: String,
     @SerializedName("body_html") val body_html: String,
     @SerializedName("vendor") val vendor: String,
@@ -21,6 +21,7 @@ data class Product (
     @SerializedName("handle") val handle: String,
     @SerializedName("updated_at") val updated_at: String,
     @SerializedName("published_at") val published_at: String,
+    @SerializedName("variants") val variants: List<Variant>,
     @SerializedName("tags") val tags: String,
     @SerializedName("image") val image: Image,
     @SerializedName("product_type") val product_type: String

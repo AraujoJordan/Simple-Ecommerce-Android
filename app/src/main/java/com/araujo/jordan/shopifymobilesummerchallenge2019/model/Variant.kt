@@ -13,7 +13,7 @@ import kotlinx.android.parcel.Parcelize
  */
 @Parcelize
 data class Variant (
-    @SerializedName("id") val id: Int,
+    @SerializedName("id") val id: String,
     @SerializedName("product_id") val product_id: String,
     @SerializedName("title") val title: String,
     @SerializedName("created_at") val created_at: String,
@@ -21,6 +21,6 @@ data class Variant (
     @SerializedName("option1") val option1: String?,
     @SerializedName("option2") val option2: String?,
     @SerializedName("option3") val option3: String?,
-    @SerializedName("inventory_quantity") val inventory_quantity: Int,
+    @SerializedName("inventory_quantity") val inventory_quantity: String,
     @SerializedName("price") val price: String
 ) : Parcelable

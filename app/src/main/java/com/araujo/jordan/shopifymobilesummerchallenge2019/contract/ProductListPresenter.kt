@@ -10,23 +10,23 @@ import com.araujo.jordan.shopifymobilesummerchallenge2019.api.ShopifyAPIInteract
  * Created by araujojordan on 08/01/2019
  */
 
-open class CollectionListPresenter : CollectionListContract.Presenter {
+open class ProductListPresenter : ProductListContract.Presenter {
 
 
     private lateinit var shopifyAPIInteractor: ShopifyAPIInteractor
-    lateinit var view: CollectionListContract.View
+    lateinit var view: ProductListContract.View
 
     override fun resume(ctx: Context) {
         shopifyAPIInteractor = ShopifyAPIInteractor(ctx)
-        shopifyAPIInteractor.attachColView(view)
+        shopifyAPIInteractor.attachProdView(view)
     }
 
-    override fun attach(view: CollectionListContract.View) {
+    override fun attach(view: ProductListContract.View) {
         this.view = view
     }
 
-    override fun fetchColData(page: Int, colID: String) {
-        shopifyAPIInteractor.fetchCollections(page,colID)
+    override fun fetchProdData(page: Int, prodIdsArr: String) {
+        shopifyAPIInteractor.fetchProducts(page,prodIdsArr)
     }
 
 }

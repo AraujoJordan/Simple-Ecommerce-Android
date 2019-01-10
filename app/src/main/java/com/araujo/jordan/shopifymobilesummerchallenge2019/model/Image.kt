@@ -14,6 +14,6 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Image (
     @SerializedName("src") val src: String,
-    @SerializedName("width") val width: Int,
-    @SerializedName("height") val height: Int
+    @SerializedName("width") val width: String,
+    @SerializedName("height") val height: String
 ) : Parcelable

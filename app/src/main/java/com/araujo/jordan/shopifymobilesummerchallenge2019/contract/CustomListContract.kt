@@ -18,6 +18,6 @@ class CustomListContract {
     }
 
     interface Presenter:BasePresenter<View>{
-        fun fetchColData(page:Int)
+        fun fetchCCData(page:Int)
     }
 }

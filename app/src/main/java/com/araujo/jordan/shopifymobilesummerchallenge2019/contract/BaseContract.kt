@@ -1,5 +1,7 @@
 package com.araujo.jordan.shopifymobilesummerchallenge2019.contract
 
+import android.content.Context
+
 /**
  * BasePresenter
  * Abstract Presenter that would be implement in many Presenters if the app scale more
@@ -8,7 +10,7 @@ package com.araujo.jordan.shopifymobilesummerchallenge2019.contract
 
 interface BasePresenter<in T> {
     fun attach(view: T)
-    fun resume()
+    fun resume(ctx: Context)
 
 }
 

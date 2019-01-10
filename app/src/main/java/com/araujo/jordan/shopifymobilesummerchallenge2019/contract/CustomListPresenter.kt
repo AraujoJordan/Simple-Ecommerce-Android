@@ -1,5 +1,6 @@
 package com.araujo.jordan.shopifymobilesummerchallenge2019.contract
 
+import android.content.Context
 import com.araujo.jordan.shopifymobilesummerchallenge2019.api.ShopifyAPIInteractor
 
 
@@ -10,7 +11,7 @@ import com.araujo.jordan.shopifymobilesummerchallenge2019.api.ShopifyAPIInteract
  */
 
 open class CustomListPresenter : CustomListContract.Presenter {
-    override fun fetchColData(page: Int) {
+    override fun fetchCCData(page: Int) {
         view.showLoading(true)
         shopifyAPIInteractor.fetchCustomCollections(page)
     }
@@ -22,8 +23,8 @@ open class CustomListPresenter : CustomListContract.Presenter {
         this.view = view
     }
 
-    override fun resume() {
-        shopifyAPIInteractor = ShopifyAPIInteractor()
+    override fun resume(ctx: Context) {
+        shopifyAPIInteractor = ShopifyAPIInteractor(ctx)
         shopifyAPIInteractor.attachCustomColView(view)
     }
 
