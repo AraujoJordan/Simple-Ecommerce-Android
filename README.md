@@ -1,4 +1,4 @@
-# Shopify-Android-Challenge-Summer-2019
+# Simple Ecommerce App
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/AraujoJordan/Shopify-Android-Challenge-Summer-2019/LICENSE)
 
